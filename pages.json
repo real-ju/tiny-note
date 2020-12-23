@@ -1,0 +1,98 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/note/note",
+			"style": {
+				"navigationBarTitleText": "便签",
+				"bounce": "none"
+			}
+		},
+		{
+			"path": "pages/add-note/add-note",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"bounce": "none"
+			}
+		},
+		{
+			"path": "pages/note-detail/note-detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"bounce": "none",
+				"titleNView": {
+					"buttons": [
+						{
+							"type": "none",
+							"text": "删除",
+							"color": "#ed4014",
+							"colorPressed": "#ed4014",
+							"fontSize": "15px",
+							"width": "60px"
+						}
+					]
+				}
+			}
+		},
+		{
+			"path": "pages/todo/todo",
+			"style": {
+				"navigationBarTitleText": "待办",
+				"bounce": "none"
+			}
+		},
+		{
+			"path": "pages/add-todo/add-todo",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"bounce": "none"
+			}
+		},
+		{
+			"path": "pages/todo-detail/todo-detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"bounce": "none",
+				"titleNView": {
+					"buttons": [
+						{
+							"type": "none",
+							"text": "删除",
+							"color": "#ed4014",
+							"colorPressed": "#ed4014",
+							"fontSize": "15px",
+							"width": "60px"
+						}
+					]
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "tiny-note",
+		"navigationBarBackgroundColor": "#F9F9F9"
+	},
+	"tabBar": {
+		"color": "#B2B2B2",
+		"selectedColor": "#FFA500",
+		"borderStyle": "#EEEEEE",
+		"list": [
+			{
+				"pagePath": "pages/note/note",
+				"text": "便签",
+				"iconPath": "static/note.png",
+				"selectedIconPath": "static/note-active.png"
+			},
+			{
+				"pagePath": "pages/todo/todo",
+				"text": "待办",
+				"iconPath": "static/todo.png",
+				"selectedIconPath": "static/todo-active.png"
+			}
+		]
+	}
+}
